@@ -1,0 +1,353 @@
+#fondo {
+position:fixed;
+top:-50%;
+left:-50%;
+width:100%;
+height:200%;
+}
+
+
+
+
+
+
+
+.contact {
+  padding: 25px 0 450px 0;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.contact i {
+  padding: 0 20px;
+  font-size: 0.8em;
+}
+
+.contact h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.5em;
+  border: 1px solid #555;
+  background-color: rgba(0,0,0,0.6);
+  padding-top: 20px;
+  height: 75px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 40px;
+  padding-left: 50px;
+  text-align: center;
+}
+
+#comments {
+  margin-top: 0;
+}
+
+#contactform {
+  height: 215px;
+}
+
+#contactform .right {
+  float: right;
+}
+
+#contactform input,
+#contactform textarea {
+  margin-bottom: 14px;
+  width: 100%;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 11px;
+}
+
+#contactform input {
+  padding-left: 15px;
+  height: 44px;
+  border-radius: 0;
+}
+
+#contactform textarea {
+  padding: 15px;
+  height: 218px;
+  border-radius: 0;
+}
+
+#contactform .btn {
+  width: 100%;
+  height: 50px;
+  border-radius: 0;
+  border: 1px solid #333;
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+}
+
+#contactform .btn:hover {
+  background: rgba(9,8,77,0.7);
+}
+
+#map-canvas {
+  width: 100%;
+  height:470px;
+  margin-bottom: 15px;
+  border: 2px solid #fff;
+}
+
+
+
+
+
+
+@charset "utf-8";
+/* CSS Document */
+
+/* ---------- FONTAWESOME ---------- */
+/* ---------- http://fortawesome.github.com/Font-Awesome/ ---------- */
+/* ---------- http://weloveiconfonts.com/ ---------- */
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+/* ---------- ERIC MEYER'S RESET CSS ---------- */
+/* ---------- http://meyerweb.com/eric/tools/css/reset/ ---------- */
+
+@import url(http://meyerweb.com/eric/tools/css/reset/reset.css);
+
+/* ---------- FONTAWESOME ---------- */
+
+/* [class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+} */
+/* general */
+body {
+	background-color: #393937;
+	font: 14px/1.5em  Arial, sans-serif;
+}
+input {
+	font-size: 1em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: 0;
+	-webkit-appearance: none;
+  appearance: none;
+}
+
+/* login */
+#login {
+	width: 242px;
+	margin: 50px auto;
+
+}
+#login label {
+	position: absolute;
+	display: block;
+	width: 36px;
+	height: 48px;
+	line-height: 48px;
+	text-align: center;
+	font-family: 'FontAwesome', sans-serif;
+	color: #676767;
+	text-shadow: 0 1px 0 #fff;
+}
+#login input {
+	border: none;
+	width: 300px;
+	height: 48px;
+  padding-left: 36px;
+	border: 1px solid #000;
+	background-color: #dedede;
+  background: -webkit-linear-gradient(top, #c3c3c3 0%, #eaeaea 100%);
+	color: #363636;
+	text-shadow: 0 1px 0 #fff;
+	outline: none;
+}
+#login input[type="text"] {
+	border-bottom: none;
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+	-webkit-box-shadow:inset 0 -1px 0 rgba(0, 0, 0, .4);
+}
+#login input[type="password"] {
+	border-top:none;
+	-webkit-border-radius: 0 0 5px 5px;
+	-moz-border-radius: 0 0 5px 5px;
+	border-radius: 0 0 5px 5px;
+	margin-bottom: 20px;
+	-webkit-box-shadow:inset 0 1px 0 rgba(255, 255, 255, .3), 0 1px 1px rgba(0, 0, 0, .2);
+}
+#login input[type="submit"] {
+	margin: 0;
+	padding: 0;
+	width: 300px;
+	background-color: #e14d4d;
+	border: 1px solid #391515;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+	line-height: 48px;
+	text-transform: uppercase;
+	/* background-image: none; */
+	background-image:-webkit-linear-gradient(top, #f15958 0%, #e14d4d 100%);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .3), 0 1px 1px rgba(0, 0, 0, .2) ;
+	-moz-box-shadow: hoff voff radius color;
+	box-shadow: hoff voff radius color;
+	text-shadow: 0 1px 0 #000;
+}
+#login input[type="submit"]:hover {
+	background-color: #f15958;
+	background-image:-webkit-linear-gradient(top, #e14d4d 0%, #f55b5b 100%);
+}
+
+
+////////////////////////////////// Barra de navegacion ( Menú)/////////////////////////////////
+
+nav  {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+nav ul {
+    margin: 20px 0 20px 0;
+    padding: .7em;
+    float: left;
+    list-style: none;
+    background: #444;
+    background: rgba(0,0,0,.2);
+    border-radius: .5em;
+    box-shadow: 0 1px 0 rgba(255,255,255,.2), 0 2px 1px rgba(0,0,0,.8) inset;
+}
+
+nav li {
+    float:left;
+}
+
+nav a {
+    float:left;
+    padding: .8em 1.5em;
+    text-decoration: none;
+    color: #555;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    font: bold 1.1em/1 'trebuchet MS', Arial, Helvetica;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff #ccc #999 #eee;
+    background: #c1c1c1;
+    background: linear-gradient(#f5f5f5,#FFFFFF);
+ }
+
+nav a:hover, nav a:focus {
+    outline: 0;
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0,0,0,.2);
+    background: #fac754;
+    background: linear-gradient(#7DFC34,#7DFC34);
+}
+
+nav a:active {
+    box-shadow: 0 0 2px 2px rgba(0,0,0,.3) inset;
+}
+
+nav li:first-child a {
+    border-left: 0;
+    border-radius: 4px 0 0 4px;
+}
+
+nav li:last-child a {
+    border-right: 0;
+    border-radius: 0 4px 4px 0;
+}
+//////////////////////////////////////////////////////////////// Formulario de Contacto /////////////////////////////////////////
+
+
+label {
+    display:block;
+    margin-top:20px;
+    letter-spacing:1px;
+}
+.formulario {
+    display:block;
+    margin:0 auto;
+    width:600px;
+    color: #666666;
+    font-family:Arial;
+}
+form {
+    margin:0 auto;
+    width:700px;
+}
+
+input, textarea {
+    width:700px;
+    height:40px;
+    background:#666666;
+    border:2px solid #f6f6f6;
+    padding:10px;
+    margin-top:5px;
+    font-size:10px;
+    color:#ffffff;
+}
+
+textarea {
+    height:150px;
+}
+
+#submit {
+    width:200px;
+    height:40px;
+    border:none;
+    margin-top:20px;
+    cursor:pointer;
+}
+
+label {
+    display:block;
+    margin-top:20px;
+    letter-spacing:1px;
+}
+.formulario {
+    display:block;
+    margin:0 auto;
+    width:700px;
+    color: #666666;
+    font-family:Arial;
+}
+form {
+    margin:0 auto;
+    width:700px;
+    background-color: rgba(156,210,107,0.65);
+    box-shadow: 2px 2px 2px #ffffff;
+
+
+
+}
+
+input, textarea {
+    width:700px;
+    height:40px;
+    background:#666666;
+    border:2px solid #f6f6f6;
+    padding:10px;
+    margin-top:5px;
+    font-size:10px;
+    color:#ffffff;
+}
+
+textarea {
+    height:150px;
+}
+
+#submit {
+    width:85px;
+    height:35px;
+    border:none;
+    margin-top:20px;
+    cursor:pointer;
+}
